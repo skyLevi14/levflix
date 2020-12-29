@@ -33,8 +33,8 @@ function Row({ title, fetchUrl, isLargeRow }) {
       let trailerurl = await axios.get(
         `/movie/${movie.id}/videos?api_key=2e47f339b7ce3a6dd11021ab26757223`
       );
-      console.log(trailerurl);
-      //setTrailerUrl(trailerurl.data.results[0]?.key);
+      //console.log(trailerurl);
+      setTrailerUrl(trailerurl.data.results[0]?.key);
     }
   };
 
